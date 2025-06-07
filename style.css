@@ -1,0 +1,72 @@
+body{
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+#validation-form{
+    min-height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+#validation-form label{
+    margin-bottom: 2px;
+}
+
+#validation-form input,#validation-form textarea{
+    margin-bottom: 20px;
+    padding: 5px
+}
+
+#validation-form input{
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom: 2px solid turquoise;
+    height: 20px;
+}
+#validation-form textarea{
+    border: 1px solid turquoise;
+    
+}
+
+#validation-form input:focus,
+#validation-form textarea:focus {
+    outline: none;
+    border-color: #00a0a0;
+}
+
+#submit-btn {
+    height: 35px;
+    border: none;
+    background-color: turquoise;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #00a0a0;
+}
+
+.error-message {
+    color: #ff3333;
+    font-size: 12px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+#validation-form input.error {
+    border-bottom-color: #ff3333;
+}

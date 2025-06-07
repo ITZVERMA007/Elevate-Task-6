@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form id="validation-form" action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <div id="nameError" class="error-message"></div>
+
+        <label for="Email-Id">EmailId:</label>
+        <input type="email" id="Email-Id" name="email" placeholder="Enter your emaild-id">
+        <div id="emailError" class="error-message"></div>
+
+        <textarea name="MessageArea" id="Message-Area" rows="10" cols="30" placeholder="Enter any message here"></textarea>
+
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
